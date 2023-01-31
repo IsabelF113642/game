@@ -25,5 +25,6 @@
 }
 /* color of "active page*/
 .active {
-  color: blue;
+  background-color: white;
+  color: black;
 }
