@@ -23,7 +23,7 @@
 #topNav > ul > li > a:hover {
   color: black;
 }
-/* color of "active page*/
+/* color of "active page" *still doesn't work* */
 .active {
   color: black;
 }
