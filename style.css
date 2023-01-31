@@ -20,5 +20,5 @@
   transition: color 0.3s ease-in;
 }
 #topNav > ul > li > a:hover {
-  color: lime;
+  color: black;
 }
