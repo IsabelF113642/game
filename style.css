@@ -19,6 +19,11 @@
   text-decoration: none;
   transition: color 0.3s ease-in;
 }
+
 #topNav > ul > li > a:hover {
   color: black;
+}
+/* color of "active page*/
+.active {
+  background-color: White;
 }
