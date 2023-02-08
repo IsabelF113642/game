@@ -9,12 +9,14 @@ def draw():
     blob.draw()
 
 def update():
-    blob.left = blob.left +2
+    blob.left = blob.left + 2
     if blob.left>WIDTH:
         blob.right=0
 
 def on_mouse_down(pos):
     if blob.collidepoint(pos):
         print("Ahhh!")
+        sounds.clicked.play()
+        blob.image='blob_hurt'
     else:
         print("Haha you missed!")
