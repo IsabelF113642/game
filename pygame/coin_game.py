@@ -51,7 +51,7 @@ def update():
         set_fox_collected()
 
 def set_fox_collected():
-    fox.image= "foxcollect"
+    fox.image= "foxcollectglasses"
     clock.schedule_unique(set_fox_normal, 1)
 
 def set_fox_normal():
