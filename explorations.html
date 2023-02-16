@@ -28,4 +28,43 @@
     </li>
   </ul>
 </nav>
+    
+    <h1>Our Time to Explore</h1>
+
+    <h2> Sections </h2>
+<ul>
+    <li><a href="#board">Board Game Exploration</a></li>
+    <li><a href="#video">Video Game Exploration</a></li>
+</ul>
+    
+    <h2 id="board">Board Game Exploration</h2>
+<p> My team and I created a simple game with a unique board pattern with dice rolling as our mechanics to move.
+    What set our game apart from the rest is that we had special rules- when two players are on the same square, 
+    if you roll certain numbers/combinations, etc.- to make the game more interesting.</p>
+<img src="IMG-5928.jpg" alt="Our Board">
+<p> We wanted each player to have a separate journey to the end, so that's exactly what we did. Each icon would represent a different 
+    player and where they will have to go-by following their icon in a clockwise direction. </p>
+<img src= "IMG-5926.jpg" alt="Our Players"
+<p> During our test game, we chose for our player pieces to be dinosaurs and we had a fun time
+    seeing the ways the pieces interacted with each other. </p>
+<h2 id ="video">Video Game Exploration</h2>
+<p>I wanted to create the simple game of coin collector, but I wanted to add a little bit of spice to make the game more fun. 
+   So, I took the image of the fox and made him grab a coin. </p>
+<img src="pygame/images/fox.png" alt="Original Fox">
+<img src="pygame/images/foxcollected.png" alt="Original Fox">
+    <p>Then I thought "why not give him sumglasses?" So I did!</p>
+<img src="pygame/images/foxcollectedglasses.png" alt="Original Fox">
+    
+    <p> Here is some of my code that shows how I was able to use the updated fox image after he collected the coin! I set 
+    the image to be used for only 1 second before resetting to the original image so that the fox's hands are free to collect more coins.</p>
+<pre>
+  if coin_collected:
+        score = score + 10
+        place_coin()
+        set_fox_collected()
+
+def set_fox_collected():
+    fox.image= "foxcollectglasses"
+    clock.schedule_unique(set_fox_normal, 1)
+</pre>
 </body>
